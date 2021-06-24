@@ -1,0 +1,39 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  id: String!
+  name: String!
+  email: String!
+  isSubscribe: Boolean
+}
+
+type Query {
+  getUser(id: String!): User
+  getUsers(ids: [String!]!): [User!]
+  getAllUsers: [User!]
+}
+
+type Mutation {
+  createUser(createUserData: CreateUserInput!): User!
+  updateUser(updateUserData: UpdataUserInput!): User!
+  deleteUser(deleteUserData: DeleteUserInput!): User!
+}
+
+input CreateUserInput {
+  name: String!
+  email: String!
+  isSubscribe: Boolean!
+}
+
+input UpdataUserInput {
+  id: String!
+  name: String!
+  email: String!
+  isSubscribe: Boolean
+}
+
+input DeleteUserInput {
+  id: String!
+}
