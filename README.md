@@ -27,6 +27,9 @@
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
+```bash
+npm install @nestjs/graphql apollo-server-express class-validator graphql graphql-tools @types/uuid --save
+```
 
 ```bash
 $ npm install
